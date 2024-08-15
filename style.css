@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(150deg, #d88f07,#fff, #1ec408);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.to-do-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 20px auto;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.to-do-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.to-do-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 16px 30px;
+    background: #0e23e0;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+}
+button:hover {
+    background: #0938b9;
+}
+ul li {
+    list-style: none;
+    font-size: 15px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid #ececec;
+    transition: background 0.3s ease;
+}
+ul li:hover {
+    background: #f9f9f9;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('unchecked.png');
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    background-image: url('checked.png');
+}
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+ul li span:hover {
+    background: #edeef0;
+}
+/**************Responsive Code***************/
+@media (max-width: 768px) {
+    .to-do-app {
+        padding: 30px 20px 60px;
+    }
+    .to-do-app h2 {
+        font-size: 20px;
+    }
+    button {
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+    input {
+        font-size: 16px;
+    }
+    ul li {
+        font-size: 14px;
+        padding: 12px 8px 12px 40px;
+    }
+    ul li::before {
+        height: 24px;
+        width: 24px;
+        top: 10px;
+    }
+}

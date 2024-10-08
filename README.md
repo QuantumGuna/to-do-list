@@ -36,6 +36,14 @@ This is a web-based To-Do List application built using HTML, CSS, and JavaScript
 
 ## Setup and Installation
 To use the To-Do List locally on your machine:
+### Installation Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/quantumguna/to-do-list.git
+2. Navigate to the project directory:
+   ```bash
+   cd to-do-list
+3. Open the index.html file in your browser to view the login page.
 
 ## How to Use
 - Visit the live version of the To-Do List application [here](https://quantumguna.github.io/to-do-list/).
@@ -44,10 +52,21 @@ To use the To-Do List locally on your machine:
 - Remove tasks using the delete button.
 
 ## Contributing
-- Fork the project.
-- Create a new branch (git checkout -b feature-branch).
-- Make your changes.
-- Submit a pull request.
+- **Fork** the repository to your GitHub account by clicking the "Fork" button at the top right.
+- **Clone** the forked repoistory to your local machine:
+   ```bash
+  git clone https://github.com/quantumguna/login_page.git
+- **Create a new branch** to work on your features or bug fix:
+  ```bash
+  git checkout -b feature-branch
+- **Make your changes** and commit them with a meaningful message:
+  ```bash
+  git add .
+  git commit -m "Add your message here"
+- **Push** your changes to your forked repository:
+  ```bash
+  git push origin feature-branch
+- **Submit a pull request** from yoour forked repository's feature branch to the original repository's main branch.
 
 ## License
 - Distributed under the MIT License. See [License](LICENSE) for more inforemation.
@@ -55,7 +74,5 @@ To use the To-Do List locally on your machine:
 ### Prerequisites
 - A modern web browser (e.g., Chrome, Firefox, Safari, etc.)
 
-### Installation Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/quantumguna/to-do-list.git
+
+
